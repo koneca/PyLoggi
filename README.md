@@ -21,6 +21,8 @@ To setup the Project type:
 Execute the Server
 ------------------
 * flask --app=PyLoggi
+* or from PyCharm:
+* * run ./run.py
 
 
 Documentation
