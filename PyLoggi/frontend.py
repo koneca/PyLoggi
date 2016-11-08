@@ -23,9 +23,10 @@ nav.register_element('frontend_top', Navbar(
     View('Home', '.index'),
     View('Forms Example', '.example_form'),
     View('Debug-Info', 'debug.debug_root'),
+    View('About', '.about'),
     Subgroup(
         'Docs',
-        Link('Flask-Bootstrap', 'http://pythonhosted.org/Flask-Bootstrap'),
+        Link('About', '/about'),
         Link('Flask-AppConfig', 'https://github.com/mbr/flask-appconfig'),
         Link('Flask-Debug', 'https://github.com/mbr/flask-debug'),
         Separator(),
@@ -42,7 +43,12 @@ nav.register_element('frontend_top', Navbar(
 # "templates/index.html" documentation for more details.
 @frontend.route('/')
 def index():
-    return render_template('index.html')
+    title = "Epic Tutorials"
+   #paragraph = [
+    #    "wow I am learning so much great stuff!wow I am learning so much great stuff!wow I am learning so much great stuff!wow I am learning so much great stuff!",
+     #   "wow I am learning so much great stuff!wow I am learning so much great stuff!wow I am learning so much great stuff!wow I am learning so much great stuff!wow I am learning so much great stuff!wow I am learning so much great stuff!wow I am learning so much great stuff!wow I am learning so much great stuff!wow I am learning so much great stuff!"]
+
+    return render_template('index.html', title=title)
 
 
 # Shows a long signup form, demonstrating form rendering.
@@ -63,3 +69,15 @@ def example_form():
         return redirect(url_for('.index'))
 
     return render_template('signup.html', form=form)
+
+@frontend.route('/about')
+def aboutpage():
+
+    title = "About this site"
+    paragraph = ["blah blah blah memememememmeme blah blah memememe"]
+
+    #pageType = 'about'
+
+    return render_template("index.html", title=title, paragraph=paragraph)#, pageType=pageType)
+
+
