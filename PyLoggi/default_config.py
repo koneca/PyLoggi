@@ -5,3 +5,4 @@
 #       default, rather the app should fail if it is missing. For the sample
 #       application, one is provided for convenience.
 SECRET_KEY = 'devkey'
+BOOTSTRAP_SERVE_LOCAL = False

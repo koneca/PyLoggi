@@ -23,7 +23,7 @@ nav.register_element('frontend_top', Navbar(
     View('Home', '.index'),
     View('Forms Example', '.example_form'),
     View('Debug-Info', 'debug.debug_root'),
-    View('About', '.about'),
+    View('About', '.aboutpage'),
     Subgroup(
         'Docs',
         Link('About', '/about'),

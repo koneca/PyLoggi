@@ -1,7 +1,7 @@
 #!/bin/bash
 
+#!/bin/bash
 source venv/bin/activate
-
-flask --app=PyLoggi
+export FLASK_APP=PyLoggi
 
 exit 0
