@@ -3,7 +3,7 @@
 Yet another Python based Datalogger for Raspberry Pi ;-)
 
 Features:
-* flask based Webserver
+* Gevent and flask based Webserver
 * Bootstrap based webinterface
 * Voll coole Sache
 
@@ -16,13 +16,12 @@ You only need Python 2.7 and [PIP](https://pip.pypa.io/en/stable/) installed
 Setup
 -----
 To setup the Project type:
-* pip install -r PyLoggi/requirements.txt
+* run setup.sh
 
 Execute the Server
 ------------------
-* flask --app=PyLoggi
-* or from PyCharm:
-* * run ./run.py
+* run run.py
+
 
 
 Documentation

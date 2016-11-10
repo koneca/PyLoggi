@@ -22,7 +22,7 @@ nav.register_element('frontend_top', Navbar(
     View('PyLoggi', '.index'),
     View('Home', '.index'),
     View('Forms Example', '.example_form'),
-    View('Debug-Info', 'debug.debug_root'),
+    #View('Debug-Info', 'debug.debug_root'),
     View('About', '.aboutpage'),
     Subgroup(
         'Docs',

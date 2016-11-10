@@ -1,6 +1,6 @@
 .idea
 PyLoggi/*.pyc
-flask-bootstrap/
-flask-bootstrap/*.pyc
+flask_bootstrap/
+flask_bootstrap/*.pyc
 *.pyc
 venv/

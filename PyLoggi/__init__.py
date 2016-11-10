@@ -20,7 +20,7 @@ from .frontend import frontend
 from .nav import nav
 
 
-def create_app(configfile=None):
+def create_app(environ, start_response):
     # We are using the "Application Factory"-pattern here, which is described
     # in detail inside the Flask docs:
     # http://flask.pocoo.org/docs/patterns/appfactories/
@@ -44,5 +44,4 @@ def create_app(configfile=None):
 
     # We initialize the navigation as well
     nav.init_app(app)
-
     return app
