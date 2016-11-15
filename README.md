@@ -3,6 +3,7 @@
 Yet another Python based Datalogger for Raspberry Pi ;-)
 
 Features:
+* <span style="color:green">NEW:</span> Runs in virtualenvironment (no root required)
 * Gevent and flask based Webserver
 * Bootstrap based webinterface
 * Voll coole Sache
@@ -20,7 +21,7 @@ To setup the Project type:
 
 Execute the Server
 ------------------
-* run run.py
+* run run.sh
 
 
 
